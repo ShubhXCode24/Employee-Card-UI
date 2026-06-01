@@ -1,16 +1,144 @@
-# React + Vite
+# 🚀 React Employee Profile Cards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React application that displays dynamic employee profile cards using reusable components, props, and array mapping.
 
-Currently, two official plugins are available:
+## 📸 Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project showcases a collection of employee profile cards with:
 
-## React Compiler
+- Employee Image
+- Name
+- Role
+- Company Name
+- Hourly Rate
+- Skills
+- Profile Description
+- Responsive Card Layout
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Built with React.js
+- Reusable Components
+- Dynamic Data Rendering
+- Props Usage
+- Array Mapping with `.map()`
+- Responsive Flexbox Layout
+- Modern Card UI Design
+- Clean and Organized Code Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+- React.js
+- JavaScript (ES6+)
+- JSX
+- CSS3
+- Flexbox
+
+## 📂 Project Structure
+
+```bash
+src/
+│
+├── components/
+│   └── Profile.jsx
+│
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+## 📚 React Concepts Used
+
+### Components
+The UI is divided into reusable Profile components.
+
+### Props
+Data is passed from App.jsx to Profile.jsx using props.
+
+```jsx
+<Profile
+  employeeName={elem.name}
+  employeeRole={elem.role}
+  companyName={elem.company}
+  payment={elem.pay}
+  employeeSkills={elem.skills}
+/>
+```
+
+### Array Mapping
+
+Employee cards are rendered dynamically using:
+
+```jsx
+employees.map((employee) => {
+  return <Profile />
+})
+```
+
+### Conditional Styling
+
+Skill badges use conditional classes:
+
+```jsx
+className={skill.startsWith("+") ? "additional" : ""}
+```
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/ShubhXCode24/react-employee-profile-cards.git
+```
+
+### Navigate to Project Folder
+
+```bash
+cd react-employee-profile-cards
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
+
+```bash
+npm run dev
+```
+
+## 🎯 Learning Outcomes
+
+Through this project, I practiced:
+
+- React Components
+- JSX
+- Props
+- Array Mapping
+- Conditional Rendering
+- Responsive Layout Design
+- Component Reusability
+
+## 🔮 Future Improvements
+
+- Search Employees
+- Filter by Skills
+- Dark Mode
+- Employee Details Modal
+- API Integration
+- Pagination
+- Favorite Profiles Feature
+
+## 👨‍💻 Author
+
+**Shubham Suryavanshi**
+
+Frontend Developer & React Learner
+
+GitHub: https://github.com/ShubhXCode24
+
+---
+
+⭐ If you like this project, consider giving it a star!
